@@ -1,0 +1,77 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --hue: 200;
+    --foreground-color: rgb(129, 146, 208);
+    --background-color: rgb(34, 45, 84);
+}
+  
+body {
+    margin: 0;
+    background-color: rgb(34, 45, 84);
+    overflow: hidden;
+}
+  
+.player-paddle, .player-paddle-2 {
+  --position: 50;
+  position: absolute;
+  background-color: rgb(129, 146, 208);
+  top: calc(var(--position) * 1vh);
+  transform: translateY(-50%);
+  width: 1.5vh;
+  height: 18vh;
+}
+  
+.player-paddle {
+    left: 1vw;
+}
+  
+.player-paddle-2 {
+    right: 1vw;
+}
+  
+.ball {
+    --x: 50;
+    --y: 50;
+    position: absolute;
+    background-color: rgb(129, 146, 208);
+    left: calc(var(--x) * 1vw);
+    top: calc(var(--y) * 1vh); 
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    width: 4.5vh;
+    height: 4.5vh;
+}
+  
+.score {
+    display: flex;
+    justify-content: center;
+    font-size: 80px;
+    color: rgb(129, 146, 208);
+}
+  
+.score > * {
+    padding: 0 15px;
+    margin: 10px 0;
+    opacity: 0.7;
+}
+  
+.score > :first-child {
+    text-align: right;
+    border-right: 10px solid rgb(129, 146, 208);
+}
+
+.endbutton{
+    position: relative;
+    left: 700px;
+    top: 560px;
+}
+
+#End{
+  padding: 5px 20px;
+    font-size: 25px;
+    background-color:  rgb(148, 39, 39);
+    color: white;
+}

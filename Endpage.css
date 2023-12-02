@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+*{
+    font-family: 'Playfair Display', serif;
+}
+
+body{
+     background-color: rgb(34, 45, 84);
+     color: white;
+     margin: 0;
+     padding: 0;
+}
+
+h1{
+    position: relative;
+    padding-left: 600px;
+    margin-top: 100px;
+    font-size: 70px;
+}
+
+#Playagain{
+    position: absolute;
+    left: 700px;
+    padding: 5px 20px;
+    font-size: 25px;
+    background-color:  rgb(142, 248, 142);
+    color: rgb(0, 0, 0);
+}
+
+#Endgame{
+    position: absolute;
+    left: 700px;
+    top: 300px;
+    padding: 5px 20px;
+    font-size: 25px;
+    background-color:  rgb(148, 39, 39);
+    color: rgb(255, 255, 255);
+}
